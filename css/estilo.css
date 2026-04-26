@@ -175,12 +175,18 @@ p.obs {
 }
 
 /* Itens do Show do Milhão */
-#conteudo > p > ul > li {
+ul.quiz-lista {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul.quiz-lista li {
 	padding: 12px 8px;
 	text-indent: 0;
 }
 
-#conteudo > p > ul > li:nth-child(even) {
+ul.quiz-lista li:nth-child(even) {
 	background-color: rgba(111, 97, 70, 0.09);
 }
 
