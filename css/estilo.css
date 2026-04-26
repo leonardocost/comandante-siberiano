@@ -118,12 +118,11 @@ body {
 
 #listaordenada li {
 	line-height: 2.2em;
-	border-bottom: 1px solid rgba(111, 97, 70, 0.2);
-	padding: 0 4px;
+	padding: 4px 8px;
 }
 
-#listaordenada li:last-child {
-	border-bottom: none;
+#listaordenada li:nth-child(even) {
+	background-color: rgba(111, 97, 70, 0.09);
 }
 
 #listaordenada a {
@@ -144,24 +143,45 @@ ol.fonte-normal {
 }
 
 ol.fonte-normal li {
-	line-height: 2em;
-	padding: 2px 0;
-	border-bottom: 1px solid rgba(111, 97, 70, 0.15);
+	line-height: 1.6;
+	padding: 8px 8px;
 }
 
-ol.fonte-normal li:last-child {
-	border-bottom: none;
+ol.fonte-normal li:nth-child(even) {
+	background-color: rgba(111, 97, 70, 0.09);
+}
+
+/* Lista de dicas (dicas.html) */
+ol.dicas-lista {
+	padding-left: 1.5em;
+	margin: 0 0 1em;
+	list-style: decimal;
+}
+
+ol.dicas-lista li {
+	line-height: 1.6;
+	padding: 10px 8px;
+}
+
+ol.dicas-lista li:nth-child(even) {
+	background-color: rgba(111, 97, 70, 0.09);
+}
+
+p.obs {
+	font-style: italic;
+	text-indent: 0;
+	margin-top: 12px;
+	color: #555;
 }
 
 /* Itens do Show do Milhão */
 #conteudo > p > ul > li {
-	padding: 12px 0;
-	border-bottom: 1px solid rgba(111, 97, 70, 0.2);
+	padding: 12px 8px;
 	text-indent: 0;
 }
 
-#conteudo > p > ul > li:last-child {
-	border-bottom: none;
+#conteudo > p > ul > li:nth-child(even) {
+	background-color: rgba(111, 97, 70, 0.09);
 }
 
 /* Rodapé */
